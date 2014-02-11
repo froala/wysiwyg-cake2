@@ -1,6 +1,6 @@
 # Froala WYSIWYG Editor Plugin for CakePHP [![Build Status](https://secure.travis-ci.org/stefanneculai/wysiwyg-cake.png)](http://travis-ci.org/stefanneculai/wysiwyg-cake)
 
-For cake 2.x
+For cake 2.1+
 
 The purpose of placing Froala WYSIWYG Editor in a plugin is to keep it separate from a themed view, the regular webroot or the app in general, which makes it easier to update and overall follows the idea of keeping the code clean and modular.
 
@@ -12,7 +12,7 @@ Or if your CakePHP application is setup as a git repository, you can add it as a
 
 	git submodule add git://github.com/stefanneculai/wysiwyg-cake.git Plugin/Froala
 
-Alternatively, you can download an archive from the [2.0 branch on Github](https://github.com/stefanneculai/wysiwyg-cake/archive/master.zip) and extract the contents to `Plugin/Froala`.
+Alternatively, you can download an archive from the [master branch on Github](https://github.com/stefanneculai/wysiwyg-cake/archive/master.zip) and extract the contents to `Plugin/Froala`.
 
 The Froala helper is basically just a convenience helper that allows you to use php and CakePHP conventions to generate the configuration for Froala and as an extra it allows you to load configs.
 
@@ -70,7 +70,7 @@ You can always check the tests to see how to use the helper.
 ## Requirements ##
 
 * PHP version: PHP 5.2+
-* CakePHP version: CakePHP 2.0+
+* CakePHP version: CakePHP 2.1+
 * jQuery javascript library <http://jquery.com/>
 
 ## Special Dependency Note ##
