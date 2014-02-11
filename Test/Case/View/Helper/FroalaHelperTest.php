@@ -54,7 +54,7 @@ class FroalaTest extends CakeTestCase {
 	public $configs = array(
 		'basic' => array(
 			'inline' => false,
-			'buttons' => "['bold', 'italic', 'underline']"
+			'buttons' => '["bold", "italic", "underline"]'
 		)
 	);
 
@@ -96,7 +96,7 @@ class FroalaTest extends CakeTestCase {
 				//<![CDATA[
 				Froala.init({
 				inline : "false",
-				buttons : ['bold', 'italic', 'underline']
+				buttons : ["bold", "italic", "underline"]
 				});
 
 				//]]>
