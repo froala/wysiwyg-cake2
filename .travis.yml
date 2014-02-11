@@ -1,32 +1,20 @@
-language: php
+# example for Crud plugin
+# assumes plugin is in path/to/app/Plugin/Crud
+cd path/to/app
 
-php:
-  - 5.2.8
-  - 5.3
-  - 5.4
+# Clone the repo down
+git clone git@github.com:FriendsOfCake/travis.git vendor/travis
 
-before_script:
-  - git clone --depth 1 git://github.com/cakephp/cakephp ../cakephp && cd ../cakephp
-  - git clone --depth 1 --branch master git://github.com/stefanneculai/wysiwyg-cake.git plugins/Froala
-  - cd plugins/Froala
-  - git submodule update --init --recursive
-  - cd ../../
-  - mv ../Users plugins/Users
-  - sh -c "mysql -e 'CREATE DATABASE cakephp_test;'"
-  - chmod -R 777 ../cakephp/app/tmp
-  - echo "<?php
-    class DATABASE_CONFIG {
-    public \$test = array(
-      'datasource' => 'Database/Mysql',
-      'database' => 'cakephp_test',
-      'host' => '0.0.0.0',
-      'login' => 'travis',
-      'persistent' => false,
-    );
-    }" > ../cakephp/app/Config/database.php
+# Export some environment variables for running the setup script
+export COPYRIGHT_YEAR=2014
+export GITHUB_USERNAME="stefanneculai"
+export PLUGIN_PATH="Plugin/Froala"
+export PLUGIN_NAME="Froala"
+export REPO_NAME="wysiwyg-cake"
+export YOUR_NAME="Stefan Neculai"
 
-script:
-  - ./lib/Cake/Console/cake test TinyMCE View/Helper/FroalaHelper --stderr
+# Run the setup
+./vendor/travis/setup.sh
 
-notifications:
-  email: false
+# Remove this repository when you are done
+rm -rf vendor/travis
