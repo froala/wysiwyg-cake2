@@ -1,0 +1,27 @@
+{
+  "name": "stefanneculai/wysiwyg-cake",
+  "version": "0.0.1",
+  "description": "No description",
+  "type": "cakephp-plugin",
+  "keywords": [
+    "cakephp"
+  ],
+  "homepage": "http://github.com/stefanneculai/wysiwyg-cake",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Stefan Neculai",
+      "role": "Maintainer"
+    }
+  ],
+  "require": {
+    "composer/installers": "*"
+  },
+  "support": {
+    "issues": "https://github.com/stefanneculai/wysiwyg-cake/issues",
+    "source": "https://github.com/stefanneculai/wysiwyg-cake"
+  },
+  "extra": {
+    "installer-name": "Froala"
+  }
+}
