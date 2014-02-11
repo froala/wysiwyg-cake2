@@ -2,7 +2,7 @@
 
 For cake 2.1+
 
-The purpose of placing Froala WYSIWYG Editor in a plugin is to keep it separate from a themed view, the regular webroot or the app in general, which makes it easier to update and overall follows the idea of keeping the code clean and modular.
+The purpose of placing [Froala WYSIWYG Editor](http://editor.froala.com) in a plugin is to keep it separate from a themed view, the regular webroot or the app in general, which makes it easier to update and overall follows the idea of keeping the code clean and modular.
 
 To use Froala WYSIWYG Editor you need to clone git repository:
 
