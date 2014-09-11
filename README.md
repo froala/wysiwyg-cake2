@@ -1,6 +1,6 @@
 # Froala WYSIWYG Editor Plugin for CakePHP [![Build Status](https://secure.travis-ci.org/froala/wysiwyg-cake.png)](http://travis-ci.org/froala/wysiwyg-cake)
 
-For cake 2.1+
+For cake 2.3+
 
 The purpose of placing [Froala WYSIWYG Editor](http://editor.froala.com) in a plugin is to keep it separate from a themed view, the regular webroot or the app in general, which makes it easier to update and overall follows the idea of keeping the code clean and modular.
 
