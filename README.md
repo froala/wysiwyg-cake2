@@ -32,7 +32,7 @@ $this->Html->css('/yourapp/Froala/css/froala_editor.min.css');
 $this->Html->script('/yourapp/Froala/js/froala_editor.min.js', array('inline' => false));
 ```
 
-To load plugins, use:
+If you need to load the plugins, then use:
 ```php
 $this->Html->script(
   array(
