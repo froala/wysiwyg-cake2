@@ -1,27 +1,41 @@
 {
-  "name": "stefanneculai/wysiwyg-cake",
-  "version": "0.0.1",
-  "description": "No description",
+  "name": "froala/wysiwyg-cake",
+  "version": "1.2.1",
+  "description": "A beautiful jQuery WYSIWYG text editor based on HTML5 technology. Cross browser, with mobile support, high performance and Retina Ready flat design.",
   "type": "cakephp-plugin",
   "keywords": [
-    "cakephp"
+    "froala",
+    "wysiwyg",
+    "text",
+    "editor",
+    "html",
+    "rich"
   ],
-  "homepage": "http://github.com/stefanneculai/wysiwyg-cake",
-  "license": "MIT",
+  "homepage": "http://editor.froala.com",
+  "license": [
+    "CC NC-ND",
+    "Single Website",
+    "Developer",
+    "Business",
+    "OEM"
+  ],
   "authors": [
     {
-      "name": "Stefan Neculai",
+      "name": "Froala Labs",
       "role": "Maintainer"
     }
   ],
   "require": {
-    "composer/installers": "*"
+    "composer/installers": "*",
+    "components/jquery": ">=1.11.0",
+    "fortawesome/font-awesome": "4.2.0"
+
   },
   "support": {
-    "issues": "https://github.com/stefanneculai/wysiwyg-cake/issues",
-    "source": "https://github.com/stefanneculai/wysiwyg-cake"
+    "issues": "https://github.com/froala/wysiwyg-cake/issues",
+    "source": "http://editor.froala.com"
   },
   "extra": {
-    "installer-name": "Froala"
+    "installer-name": "Froala Editor"
   }
 }

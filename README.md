@@ -1,4 +1,4 @@
-# Froala WYSIWYG Editor Plugin for CakePHP [![Build Status](https://secure.travis-ci.org/stefanneculai/wysiwyg-cake.png)](http://travis-ci.org/stefanneculai/wysiwyg-cake)
+# Froala WYSIWYG Editor Plugin for CakePHP [![Build Status](https://secure.travis-ci.org/froala/wysiwyg-cake.png)](http://travis-ci.org/froala/wysiwyg-cake)
 
 For cake 2.1+
 
@@ -6,13 +6,13 @@ The purpose of placing [Froala WYSIWYG Editor](http://editor.froala.com) in a pl
 
 To use Froala WYSIWYG Editor you need to clone git repository:
 
-	git clone git://github.com/stefanneculai/wysiwyg-cake.git Plugin/Froala
+	git clone git://github.com/froala/wysiwyg-cake.git Plugin/Froala
 
 Or if your CakePHP application is setup as a git repository, you can add it as a submodule:
 
-	git submodule add git://github.com/stefanneculai/wysiwyg-cake.git Plugin/Froala
+	git submodule add git://github.com/froala/wysiwyg-cake.git Plugin/Froala
 
-Alternatively, you can download an archive from the [master branch on Github](https://github.com/stefanneculai/wysiwyg-cake/archive/master.zip) and extract the contents to `Plugin/Froala`.
+Alternatively, you can download an archive from the [master branch on Github](https://github.com/froala/wysiwyg-cake/archive/master.zip) and extract the contents to `Plugin/Froala`.
 
 The Froala helper is basically just a convenience helper that allows you to use php and CakePHP conventions to generate the configuration for Froala and as an extra it allows you to load configs.
 
@@ -32,6 +32,18 @@ $this->Html->css('/yourapp/Froala/css/froala_editor.min.css');
 $this->Html->script('/yourapp/Froala/js/froala_editor.min.js', array('inline' => false));
 ```
 
+To load plugins, use:
+```php
+$this->Html->script('/yourapp/Froala/js/plugins/block_styles.min.js', array('inline' => false));
+$this->Html->script('/yourapp/Froala/js/plugins/color.min.js', array('inline' => false));
+$this->Html->script('/yourapp/Froala/js/plugins/file_upload.min.js', array('inline' => false));
+$this->Html->script('/yourapp/Froala/js/plugins/font_family.min.js', array('inline' => false));
+$this->Html->script('/yourapp/Froala/js/plugins/lists.min.js', array('inline' => false));
+$this->Html->script('/yourapp/Froala/js/plugins/media_manager.min.js', array('inline' => false));
+$this->Html->script('/yourapp/Froala/js/plugins/tables.min.js', array('inline' => false));
+$this->Html->script('/yourapp/Froala/js/plugins/video.min.js', array('inline' => false));
+```
+
 ## How to use the helper ##
 
 Since CakePHP 2.0 it is necessary to activate the plugin in your application. To do so,
@@ -44,10 +56,10 @@ Wherever you want to use it, load it in the controller
 $this->helpers = array('Froala.Froala');
 ```
 
-In the view simply use the editor() method and pass config key/value pairs in an array.
+In the view simply use the editor() method and pass options as key/value pairs in an array.
 
 ```php
-$this->Froala->editor('.selector', array('inline' => false));
+$this->Froala->editor('.selector', array('inlineMode' => false));
 ```
 
 This will instruct Froala to convert all matched elements on the page to Froala editors. If you require some more precise control, or want to change this behavior, checkout the [Froala configuration options](http://editor.froala.com/docs/options) on the Froala website.
@@ -80,7 +92,7 @@ view in which you want to display your editor. An example of how to load jQuery 
 	<?php
 		...
 
-		echo $this->Html->script(array('http://code.jquery.com/jquery-1.10.2.min.js'));
+		echo $this->Html->script(array('http://code.jquery.com/jquery-1.11.0.min.js'));
 
 		...
 
@@ -99,6 +111,7 @@ Of course, you may also use a copy of the jQuery library from your app/webroot/j
 		echo $this->fetch('script');
 	?>
 
+Also you should include the Font Awesome library so that the editor buttons work fine.
 
 ## License
 
@@ -106,5 +119,5 @@ The `wysiwyg-cake` project is under MIT license.
 
 You may use the editor for non-commercial websites for free under the [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](http://creativecommons.org/licenses/by-nc-nd/4.0/).
 
-Froala Editor has [3 different licenses](http://editor.froala.com/download/) for commercial use.
+Froala Editor has [4 different licenses](http://editor.froala.com/download/) for commercial use.
 For details please see [License Agreement](http://editor.froala.com/license).

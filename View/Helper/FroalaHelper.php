@@ -77,9 +77,9 @@ class FroalaHelper extends AppHelper {
 
 /**
  * beforeRender callback
- * 
+ *
  * @param string $viewFile The view file that is going to be rendered
- * 
+ *
  * @return void
  */
 	public function beforeRender($viewFile) {
@@ -88,6 +88,15 @@ class FroalaHelper extends AppHelper {
 			$this->_defaults = $appOptions;
 		}
 		$this->Html->script('/Froala/js/froala_editor.min.js', array('inline' => false));
+    $this->Html->script('/Froala/js/plugins/block_styles.min.js', array('inline' => false));
+    $this->Html->script('/Froala/js/plugins/colors.min.js', array('inline' => false));
+    $this->Html->script('/Froala/js/plugins/file_upload.min.js', array('inline' => false));
+    $this->Html->script('/Froala/js/plugins/font_family.min.js', array('inline' => false));
+    $this->Html->script('/Froala/js/plugins/media_manager.min.js', array('inline' => false));
+    $this->Html->script('/Froala/js/plugins/font_size.min.js', array('inline' => false));
+    $this->Html->script('/Froala/js/plugins/lists.min.js', array('inline' => false));
+    $this->Html->script('/Froala/js/plugins/tables.min.js', array('inline' => false));
+    $this->Html->script('/Froala/js/plugins/video.min.js', array('inline' => false));
 		$this->Html->css('/Froala/css/froala_editor.min.css');
 	}
 

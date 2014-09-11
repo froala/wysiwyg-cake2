@@ -5,7 +5,7 @@
  * Copyright 2014, Froala (http://www.froala.com)
  *
  */
- 
+
 App::uses('Controller', 'Controller');
 App::uses('HtmlHelper', 'View/Helper');
 App::uses('FroalaHelper', 'Froala.View/Helper');
@@ -161,6 +161,18 @@ class FroalaTest extends CakeTestCase {
 				'/Froala/js/froala_editor.min.js',
 				array('inline' => false));
 		$this->Froala->beforeRender('test.ctp');
+
+    $plugins = ['block_styles', 'colors', 'file_upload', 'font_family', 'font_size',
+                'lists', 'media_manager', 'tables', 'video'];
+
+    foreach ($plugins as $plugin) {
+  		$this->Froala->Html->expects($this->any())
+  			->method('script')
+  			->with(
+  				'/Froala/js/plugins/' + $plugin + '.min.js',
+  				array('inline' => false));
+  		$this->Froala->beforeRender('test.ctp');
+    }
 
 		$this->Froala->Html->expects($this->any())
             ->method('css')
