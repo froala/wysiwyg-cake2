@@ -87,16 +87,17 @@ class FroalaHelper extends AppHelper {
 		if ($appOptions !== false && is_array($appOptions)) {
 			$this->_defaults = $appOptions;
 		}
-		$this->Html->script('/Froala/js/froala_editor.min.js', array('inline' => false));
-    $this->Html->script('/Froala/js/plugins/block_styles.min.js', array('inline' => false));
-    $this->Html->script('/Froala/js/plugins/colors.min.js', array('inline' => false));
-    $this->Html->script('/Froala/js/plugins/file_upload.min.js', array('inline' => false));
-    $this->Html->script('/Froala/js/plugins/font_family.min.js', array('inline' => false));
-    $this->Html->script('/Froala/js/plugins/media_manager.min.js', array('inline' => false));
-    $this->Html->script('/Froala/js/plugins/font_size.min.js', array('inline' => false));
-    $this->Html->script('/Froala/js/plugins/lists.min.js', array('inline' => false));
-    $this->Html->script('/Froala/js/plugins/tables.min.js', array('inline' => false));
-    $this->Html->script('/Froala/js/plugins/video.min.js', array('inline' => false));
+		$this->Html->script(array(
+      '/Froala/js/froala_editor.min.js',
+      '/Froala/js/plugins/block_styles.min.js',
+      '/Froala/js/plugins/colors.min.js',
+      '/Froala/js/plugins/file_upload.min.js',
+      '/Froala/js/plugins/font_family.min.js',
+      '/Froala/js/plugins/media_manager.min.js',
+      '/Froala/js/plugins/font_size.min.js',
+      '/Froala/js/plugins/lists.min.js',
+      '/Froala/js/plugins/tables.min.js',
+      '/Froala/js/plugins/video.min.js'), array('inline' => false));
 		$this->Html->css('/Froala/css/froala_editor.min.css');
 	}
 

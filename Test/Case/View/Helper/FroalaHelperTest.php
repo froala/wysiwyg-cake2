@@ -158,21 +158,19 @@ class FroalaTest extends CakeTestCase {
 		$this->Froala->Html->expects($this->any())
 			->method('script')
 			->with(
-				'/Froala/js/froala_editor.min.js',
+        array(
+          '/Froala/js/froala_editor.min.js',
+          '/Froala/js/plugins/block_styles.min.js',
+          '/Froala/js/plugins/colors.min.js',
+          '/Froala/js/plugins/file_upload.min.js',
+          '/Froala/js/plugins/font_family.min.js',
+          '/Froala/js/plugins/media_manager.min.js',
+          '/Froala/js/plugins/font_size.min.js',
+          '/Froala/js/plugins/lists.min.js',
+          '/Froala/js/plugins/tables.min.js',
+          '/Froala/js/plugins/video.min.js'),
 				array('inline' => false));
 		$this->Froala->beforeRender('test.ctp');
-
-    $plugins = ['block_styles', 'colors', 'file_upload', 'font_family', 'font_size',
-                'lists', 'media_manager', 'tables', 'video'];
-
-    foreach ($plugins as $plugin) {
-  		$this->Froala->Html->expects($this->any())
-  			->method('script')
-  			->with(
-  				'/Froala/js/plugins/' + $plugin + '.min.js',
-  				array('inline' => false));
-  		$this->Froala->beforeRender('test.ctp');
-    }
 
 		$this->Froala->Html->expects($this->any())
             ->method('css')
