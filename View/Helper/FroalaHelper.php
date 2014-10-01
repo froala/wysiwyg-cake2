@@ -97,6 +97,7 @@ class FroalaHelper extends AppHelper {
       '/Froala/js/plugins/font_size.min.js',
       '/Froala/js/plugins/lists.min.js',
       '/Froala/js/plugins/tables.min.js',
+      '/Froala/js/plugins/char_counter.min.js',
       '/Froala/js/plugins/video.min.js'), array('inline' => false));
 		$this->Html->css('/Froala/css/froala_editor.min.css');
 	}

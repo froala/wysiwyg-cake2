@@ -45,6 +45,7 @@ $this->Html->script(
     '/Froala/js/plugins/media_manager.min.js',
     '/Froala/js/plugins/lists.min.js',
     '/Froala/js/plugins/tables.min.js',
+    '/Froala/js/plugins/char_counter.min.js',
     '/Froala/js/plugins/video.min.js'),
 
   array('inline' => false)
