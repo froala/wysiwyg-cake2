@@ -1,5 +1,5 @@
 /*!
- * froala_editor v1.2.2 (http://editor.froala.com)
+ * froala_editor v1.2.4 (http://editor.froala.com)
  * Copyright 2014-2014 Froala
  */
 
@@ -15,8 +15,8 @@ $.Editable.LANGS['tr'] = {
     "Strikethrough": "\u00dcst\u00fc \u00e7izili",
     "Font Size": "Yaz\u0131tipi B\u00fcy\u00fckl\u00fc\u011f\u00fc",
     "Color": "Rengi",
-    "Background Color": "Arkaplan rengi",
-    "Text Color": "Yaz\u0131 rengi",
+    "Background": "Arkaplan",
+    "Text": "Yaz\u0131",
     "Format Block": "Bi\u00e7imler",
     "Normal": "Normal",
     "Paragraph": "Paragraf",
@@ -51,7 +51,6 @@ $.Editable.LANGS['tr'] = {
     "Replace Image": "Resim de\u011fi\u015ftirmek",
     "Remove Image": "Resim kald\u0131r",
     "Title": "Ba\u015fl\u0131k",
-    "Insert image": "Resim ekle",
     "Drop image": "B\u0131rak resim",
     "or click": "ya da t\u0131klay\u0131n",
     "or": "veya",
@@ -84,7 +83,11 @@ $.Editable.LANGS['tr'] = {
     "Delete row": "Sat\u0131r\u0131 sil",
     "Insert column before": "\u00d6ncesine yeni s\u00fctun ekle",
     "Insert column after": "Sonras\u0131na yeni s\u00fctun ekle",
-    "Delete column": "S\u00fctunu sil"
+    "Delete column": "S\u00fctunu sil",
+    "Uploading image": "Y\u00fckleme resim",
+    "Upload File": "Dosya Y\u00fckle",
+    "Drop File": "B\u0131rak dosya",
+    "Clear formatting": "Bi\u00e7imlendirme kald\u0131r"
   },
   direction: "ltr"
 };

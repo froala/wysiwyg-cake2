@@ -1,5 +1,5 @@
 /*!
- * froala_editor v1.2.2 (http://editor.froala.com)
+ * froala_editor v1.2.4 (http://editor.froala.com)
  * Copyright 2014-2014 Froala
  */
 
@@ -15,8 +15,8 @@ $.Editable.LANGS['hu'] = {
     "Strikethrough": "\u00c1th\u00fazott",
     "Font Size": "Bet\u0171m\u00e9retek",
     "Color": "Sz\u00edne",
-    "Background Color": "H\u00e1tt\u00e9r sz\u00edn",
-    "Text Color": "Sz\u00f6veg sz\u00edne",
+    "Background": "H\u00e1tt\u00e9r",
+    "Text": "Sz\u00f6veg",
     "Format Block": "Form\u00e1tumok",
     "Normal": "Norm\u00e1l",
     "Paragraph": "Bekezd\u00e9s",
@@ -51,7 +51,6 @@ $.Editable.LANGS['hu'] = {
     "Replace Image": "K\u00e9pek cser\u00e9je",
     "Remove Image": "K\u00e9p elt\u00e1vol\u00edt\u00e1sa",
     "Title": "C\u00edm",
-    "Insert image": "K\u00e9p besz\u00far\u00e1sa",
     "Drop image": "Dobd k\u00e9p",
     "or click": "vagy kattintson",
     "or": "vagy",
@@ -84,7 +83,11 @@ $.Editable.LANGS['hu'] = {
     "Delete row": "Sor t\u00f6rl\u00e9se",
     "Insert column before": "Oszlop besz\u00far\u00e1sa el\u00e9",
     "Insert column after": "Oszlop besz\u00far\u00e1sa m\u00f6g\u00e9",
-    "Delete column": "Oszlop t\u00f6rl\u00e9se"
+    "Delete column": "Oszlop t\u00f6rl\u00e9se",
+    "Uploading image": "Felt\u00f6lt\u00e9s k\u00e9p",
+    "Upload File": "F\u00e1jl felt\u00f6lt\u00e9se",
+    "Drop File": "Csepp f\u00e1jl",
+    "Clear formatting": "Form\u00e1z\u00e1s elt\u00e1vol\u00edt\u00e1sa"
   },
   direction: "ltr"
 };

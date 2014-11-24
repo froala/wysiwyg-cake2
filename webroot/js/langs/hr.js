@@ -1,5 +1,5 @@
 /*!
- * froala_editor v1.2.2 (http://editor.froala.com)
+ * froala_editor v1.2.4 (http://editor.froala.com)
  * Copyright 2014-2014 Froala
  */
 
@@ -9,15 +9,15 @@
 
 $.Editable.LANGS['hr'] = {
   translation: {
-    "Bold": "Masna",
+    "Bold": "Podebljaj",
     "Italic": "Kurziv",
     "Underline": "Crta ispod",
     "Strikethrough": "Crta kroz sredinu",
     "Font Size": "Veli\u010dina fonta",
     "Color": "Boja",
-    "Background Color": "Boja pozadine",
-    "Text Color": "Boja teksta",
-    "Format Block": "Formatiranje bloka",
+    "Background": "Pozadine",
+    "Text": "Teksta",
+    "Format Block": "Format bloka",
     "Normal": "Normalno",
     "Paragraph": "Paragraf",
     "Code": "Izvorni kod",
@@ -42,7 +42,7 @@ $.Editable.LANGS['hr'] = {
     "Insert Link": "Umetni link",
     "Insert Image": "Umetni sliku",
     "Insert Video": "Umetni video",
-    "Undo": "Korak nazad",
+    "Undo": "Korak natrag",
     "Redo": "Korak naprijed",
     "Show HTML": "Prika\u017ei HTML kod",
     "Float Left": "Prebaci lijevo",
@@ -51,30 +51,29 @@ $.Editable.LANGS['hr'] = {
     "Replace Image": "Zamijeni sliku",
     "Remove Image": "Ukloni sliku",
     "Title": "Naslov",
-    "Insert image": "Umetni sliku",
     "Drop image": "Izbaci sliku",
     "or click": "ili odaberi",
     "or": "ili",
     "Enter URL": "Enter URL",
-    "Please wait!": "Molim sa\u010dekaj.",
-    "Are you sure? Image will be deleted.": "Da li ste sigurni da \u017eelite da obri\u0161ete ovu sliku?",
+    "Please wait!": "Molim pri\u010dekaj!",
+    "Are you sure? Image will be deleted.": "Da li ste sigurni da \u017eelite obrisati ovu sliku?",
     "UNLINK": "Ukloni link",
     "Open in new tab": "Otvori u novom prozoru",
-    "Type something": "Ukucajte ne\u0161tp",
+    "Type something": "Ukucaj ne\u0161to",
     "Cancel": "Otka\u017ei",
     "OK": "U redu",
     "Manage images": "Upravljanje slike",
     "Delete": "Obri\u0161i",
     "Font Family": "Odaberi font",
     "Insert Horizontal Line": "Umetni liniju",
-    "Table": "Tabela",
-    "Insert table": "Umetni tabelu",
+    "Table": "Tablica",
+    "Insert table": "Umetni tablicu",
     "Cell": "Polje",
     "Row": "Red",
     "Column": "Stupac",
-    "Delete table": "Obri\u0161i tabelu",
+    "Delete table": "Obri\u0161i tablicu",
     "Insert cell before": "Umetni polje prije",
-    "Insert cell after": "Umetni polje posle",
+    "Insert cell after": "Umetni polje poslije",
     "Delete cell": "Obri\u0161i polje",
     "Merge cells": "Spoji polja",
     "Horizontal split": "Horizontalno razdvajanje polja",
@@ -84,7 +83,11 @@ $.Editable.LANGS['hr'] = {
     "Delete row": "Obri\u0161i red",
     "Insert column before": "Umetni stupac prije",
     "Insert column after": "Umetni stupac poslije",
-    "Delete column": "Obri\u0161i stupac"
+    "Delete column": "Obri\u0161i stupac",
+    "Uploading image": "Prijenos slike",
+    "Upload File": "Prijenos datoteke",
+    "Drop File": "Izbaci datoteke",
+    "Clear formatting": "Ukloniti oblikovanje"
   },
   direction: "ltr"
 };

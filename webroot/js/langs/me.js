@@ -1,5 +1,5 @@
 /*!
- * froala_editor v1.2.2 (http://editor.froala.com)
+ * froala_editor v1.2.4 (http://editor.froala.com)
  * Copyright 2014-2014 Froala
  */
 
@@ -15,8 +15,8 @@ $.Editable.LANGS['me'] = {
     "Strikethrough": "Prekri\u017eano",
     "Font Size": "Veli\u010dina fonta",
     "Color": "Boja",
-    "Background Color": "Boja pozadine",
-    "Text Color": "Boja teksta",
+    "Background": "Pozadine",
+    "Text": "Teksta",
     "Format Block": "Formatiranje bloka",
     "Normal": "Normalno",
     "Paragraph": "Paragraf",
@@ -51,7 +51,6 @@ $.Editable.LANGS['me'] = {
     "Replace Image": "Zamijeni ilustraciju",
     "Remove Image": "Ukloni ilustraciju",
     "Title": "Naslov",
-    "Insert image": "Umetni ilustraciju",
     "Drop image": "Izbaci ilustraciju",
     "or click": "ili odaberi",
     "or": "ili",
@@ -84,7 +83,11 @@ $.Editable.LANGS['me'] = {
     "Delete row": "Obri\u0161i red",
     "Insert column before": "Umetni kolonu prije",
     "Insert column after": "Umetni kolonu poslije",
-    "Delete column": "Obri\u0161i kolonu"
+    "Delete column": "Obri\u0161i kolonu",
+    "Uploading image": "Prijenos slike",
+    "Upload File": "Prijenos datoteke",
+    "Drop File": "Izbaci datoteke",
+    "Clear formatting": "Izbrisati formatiranje"
   },
   direction: "ltr"
 };

@@ -1,5 +1,5 @@
 /*!
- * froala_editor v1.2.2 (http://editor.froala.com)
+ * froala_editor v1.2.4 (http://editor.froala.com)
  * Copyright 2014-2014 Froala
  */
 
@@ -15,8 +15,8 @@ $.Editable.LANGS['en_ca'] = {
     "Strikethrough": "Strikethrough",
     "Font Size": "Font Size",
     "Color": "Colour",
-    "Background Color": "Background Colour",
-    "Text Color": "Text Colour",
+    "Background": "Background",
+    "Text": "Text",
     "Format Block": "Format Block",
     "Normal": "Normal",
     "Paragraph": "Paragraph",
@@ -51,7 +51,6 @@ $.Editable.LANGS['en_ca'] = {
     "Replace Image": "Replace Image",
     "Remove Image": "Remove Image",
     "Title": "Title",
-    "Insert image": "Insert image",
     "Drop image": "Drop image",
     "or click": "or click",
     "or": "or",
@@ -84,7 +83,11 @@ $.Editable.LANGS['en_ca'] = {
     "Delete row": "Delete row",
     "Insert column before": "Insert column before",
     "Insert column after": "Insert column after",
-    "Delete column": "Delete column"
+    "Delete column": "Delete column",
+    "Uploading image": "Uploading image",
+    "Upload File": "Upload File",
+    "Drop File": "Drop File",
+    "Clear formatting": "Clear formatting"
   },
   direction: "ltr"
 };

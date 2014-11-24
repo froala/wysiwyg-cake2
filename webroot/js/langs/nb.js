@@ -1,5 +1,5 @@
 /*!
- * froala_editor v1.2.2 (http://editor.froala.com)
+ * froala_editor v1.2.4 (http://editor.froala.com)
  * Copyright 2014-2014 Froala
  */
 
@@ -15,8 +15,8 @@ $.Editable.LANGS['nb'] = {
     "Strikethrough": "Gjennomstreket",
     "Font Size": "St\u00f8rrelse",
     "Color": "Farge",
-    "Background Color": "Bakgrunnsfarge",
-    "Text Color": "Tekstfarge",
+    "Background": "Bakgrunn",
+    "Text": "Tekst",
     "Format Block": "Stiler",
     "Normal": "Normal",
     "Paragraph": "Avsnitt",
@@ -51,7 +51,6 @@ $.Editable.LANGS['nb'] = {
     "Replace Image": "Bytt bilde",
     "Remove Image": "Fjern bilde",
     "Title": "Tittel",
-    "Insert image": "Sett inn bilde",
     "Drop image": "Slippe bilde",
     "or click": "eller klikk",
     "or": "eller",
@@ -84,7 +83,11 @@ $.Editable.LANGS['nb'] = {
     "Delete row": "Slett rad",
     "Insert column before": "Sett inn kolonne f\u00f8r",
     "Insert column after": "Sett inn kolonne etter",
-    "Delete column": "Slett kolonne"
+    "Delete column": "Slett kolonne",
+    "Uploading image": "Opplasting bilde",
+    "Upload File": "Opplastingsfil",
+    "Drop File": "Slippe fil",
+    "Clear formatting": "Fjerne formatering"
   },
   direction: "ltr"
 };

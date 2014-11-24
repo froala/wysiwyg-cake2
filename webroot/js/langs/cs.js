@@ -1,5 +1,5 @@
 /*!
- * froala_editor v1.2.2 (http://editor.froala.com)
+ * froala_editor v1.2.4 (http://editor.froala.com)
  * Copyright 2014-2014 Froala
  */
 
@@ -15,8 +15,8 @@ $.Editable.LANGS['cs'] = {
     "Strikethrough": "P\u0159e\u0161rktnut\u00e9",
     "Font Size": "Velikost p\u00edsma",
     "Color": "Barva",
-    "Background Color": "Barva pozad\u00ed",
-    "Text Color": "Barva p\u00edsma",
+    "Background": "Pozad\u00ed",
+    "Text": "P\u00edsma",
     "Format Block": "Form\u00e1ty",
     "Normal": "Norm\u00e1ln\u00ed",
     "Paragraph": "Odstavec",
@@ -51,7 +51,6 @@ $.Editable.LANGS['cs'] = {
     "Replace Image": "Nahra\u010fte obr\u00e1zek",
     "Remove Image": "Odstranit obr\u00e1zek",
     "Title": "Titulek",
-    "Insert image": "Vlo\u017eit obr\u00e1zek",
     "Drop image": "Shodit obr\u00e1zek",
     "or click": "nebo klepn\u011bte na tla\u010d\u00edtko",
     "or": "nebo",
@@ -84,7 +83,11 @@ $.Editable.LANGS['cs'] = {
     "Delete row": "Smazat \u0159\u00e1dek",
     "Insert column before": "Vlo\u017eit sloupec vlevo",
     "Insert column after": "Vlo\u017eit sloupec vpravo",
-    "Delete column": "Smazat sloupec"
+    "Delete column": "Smazat sloupec",
+    "Uploading image": "Nahr\u00e1v\u00e1n\u00ed obrazu",
+    "Upload File": "Nahr\u00e1t soubor",
+    "Drop File": "Drop soubor",
+    "Clear formatting": "Vymazat form\u00e1tov\u00e1n\u00ed"
   },
   direction: "ltr"
 };
