@@ -46,6 +46,9 @@ $this->Html->script(
     '/Froala/js/plugins/lists.min.js',
     '/Froala/js/plugins/tables.min.js',
     '/Froala/js/plugins/char_counter.min.js',
+    '/Froala/js/plugins/fullscreen.min.js',
+    '/Froala/js/plugins/inline_styles.min.js',
+    '/Froala/js/plugins/urls.min.js'
     '/Froala/js/plugins/video.min.js'),
 
   array('inline' => false)
