@@ -1,6 +1,6 @@
 {
   "name": "froala/wysiwyg-cake",
-  "version": "1.2.6",
+  "version": "1.2.8",
   "description": "A beautiful jQuery WYSIWYG text editor based on HTML5 technology. Cross browser, with mobile support, high performance and Retina Ready flat design.",
   "type": "cakephp-plugin",
   "keywords": [
@@ -16,12 +16,10 @@
     "javascript",
     "jquery"
   ],
-  "homepage": "http://editor.froala.com",
+  "homepage": "https://www.froala.com/wysiwyg-editor",
   "license": [
-    "CC NC-ND",
     "Single Website",
-    "Developer",
-    "Business",
+    "Advanced",
     "OEM"
   ],
   "authors": [
@@ -38,7 +36,7 @@
   },
   "support": {
     "issues": "https://github.com/froala/wysiwyg-cake/issues",
-    "source": "http://editor.froala.com"
+    "source": "https://www.froala.com/wysiwyg-editor"
   },
   "extra": {
     "installer-name": "Froala Editor"

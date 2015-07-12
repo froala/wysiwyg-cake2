@@ -49,7 +49,8 @@ $this->Html->script(
     '/Froala/js/plugins/fullscreen.min.js',
     '/Froala/js/plugins/inline_styles.min.js',
     '/Froala/js/plugins/urls.min.js'
-    '/Froala/js/plugins/video.min.js'),
+    '/Froala/js/plugins/video.min.js',
+    '/Froala/js/plugins/entities.min.js'),
 
   array('inline' => false)
 );
@@ -128,7 +129,5 @@ Also you should include the Font Awesome library so that the editor buttons work
 
 The `wysiwyg-cake` project is under MIT license.
 
-You may use the editor for non-commercial websites for free under the [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](http://creativecommons.org/licenses/by-nc-nd/4.0/).
-
-Froala Editor has [4 different licenses](http://editor.froala.com/download/) for commercial use.
+Froala Editor has [3 different licenses](http://editor.froala.com/download/) for commercial use.
 For details please see [License Agreement](http://editor.froala.com/license).

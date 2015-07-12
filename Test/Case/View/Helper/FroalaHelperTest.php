@@ -172,7 +172,8 @@ class FroalaTest extends CakeTestCase {
           '/Froala/js/plugins/inline_styles.min.js',
           '/Froala/js/plugins/urls.min.js',
           '/Froala/js/plugins/fullscreen.min.js',
-          '/Froala/js/plugins/video.min.js'),
+          '/Froala/js/plugins/video.min.js',
+          '/Froala/js/plugins/entities.min.js'),
 				array('inline' => false));
 		$this->Froala->beforeRender('test.ctp');
 
