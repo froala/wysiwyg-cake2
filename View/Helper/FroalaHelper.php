@@ -72,7 +72,7 @@ class FroalaHelper extends AppHelper {
 		// remove last comma from lines to avoid the editor breaking in Internet Explorer
 		$lines = rtrim($lines);
 		$lines = rtrim($lines, ',');
-		$this->Html->scriptBlock('$("' . $selector . '").editable({' . "\n" . $lines . "\n" . '});' . "\n", array('inline' => false));
+		$this->Html->scriptBlock('$("' . $selector . '").froalaEditor({' . "\n" . $lines . "\n" . '});' . "\n", array('toolbarInline' => false));
 	}
 
 /**
@@ -89,21 +89,46 @@ class FroalaHelper extends AppHelper {
 		}
 		$this->Html->script(array(
       '/Froala/js/froala_editor.min.js',
-      '/Froala/js/plugins/block_styles.min.js',
-      '/Froala/js/plugins/colors.min.js',
-      '/Froala/js/plugins/file_upload.min.js',
-      '/Froala/js/plugins/font_family.min.js',
-      '/Froala/js/plugins/media_manager.min.js',
-      '/Froala/js/plugins/font_size.min.js',
-      '/Froala/js/plugins/lists.min.js',
-      '/Froala/js/plugins/tables.min.js',
+      '/Froala/js/plugins/align.min.js',
       '/Froala/js/plugins/char_counter.min.js',
-      '/Froala/js/plugins/inline_styles.min.js',
-      '/Froala/js/plugins/urls.min.js',
+      '/Froala/js/plugins/code_beautifier.min.js',
+      '/Froala/js/plugins/code_view.min.js',
+      '/Froala/js/plugins/colors.min.js',
+      '/Froala/js/plugins/emoticons.min.js',
+      '/Froala/js/plugins/entities.min.js',
+      '/Froala/js/plugins/file.min.js',
+      '/Froala/js/plugins/font_family.min.js',
+      '/Froala/js/plugins/font_size.min.js',
       '/Froala/js/plugins/fullscreen.min.js',
-      '/Froala/js/plugins/video.min.js',
-      '/Froala/js/plugins/entities.min.js'), array('inline' => false));
-		$this->Html->css('/Froala/css/froala_editor.min.css');
+      '/Froala/js/plugins/image_manager.min.js',
+      '/Froala/js/plugins/image.min.js',
+      '/Froala/js/plugins/inline_style.min.js',
+      '/Froala/js/plugins/line_breaker.min.js',
+      '/Froala/js/plugins/link.min.js',
+      '/Froala/js/plugins/lists.min.js',
+      '/Froala/js/plugins/paragraph_format.min.js',
+      '/Froala/js/plugins/paragraph_style.min.js',
+      '/Froala/js/plugins/quote.min.js',
+      '/Froala/js/plugins/save.min.js',
+      '/Froala/js/plugins/table.min.js',
+      '/Froala/js/plugins/url.min.js',
+      '/Froala/js/plugins/video.min.js'), array('toolbarInline' => false));
+		$this->Html->css(array(
+        '/Froala/css/froala_editor.min.css',
+        '/Froala/css/froala_style.min.css',
+        '/Froala/css/plugins/char_counter.min.css',
+        '/Froala/css/plugins/code_view.min.css',
+        '/Froala/css/plugins/colors.min.css',
+        '/Froala/css/plugins/emoticons.min.css',
+        '/Froala/css/plugins/file.min.css',
+        '/Froala/css/plugins/fullscreen.min.css',
+        '/Froala/css/plugins/image_manager.min.css',
+        '/Froala/css/plugins/image.min.css',
+        '/Froala/css/plugins/line_breaker.min.css',
+        '/Froala/css/plugins/table.min.css',
+        '/Froala/css/plugins/video.min.css'
+      )
+    );
 	}
 
 }

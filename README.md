@@ -20,7 +20,7 @@ There two ways you can use this plugin, simply use the helper or load the editor
 
 ```php
 $this->Html->css('/Froala/css/froala_editor.min.css');
-$this->Html->script('/Froala/js/froala_editor.min.js', array('inline' => false));
+$this->Html->script('/Froala/js/froala_editor.min.js', array('toolbarInline' => false));
 ```
 
 and placing your own script in the head of the page. Please note that the helper will auto add the Froala editor script to the header of the page. No need to to that by hand if you use the helper.
@@ -29,7 +29,7 @@ If your app is not set up to work in the top level of your host / but instead in
 
 ```php
 $this->Html->css('/yourapp/Froala/css/froala_editor.min.css');
-$this->Html->script('/yourapp/Froala/js/froala_editor.min.js', array('inline' => false));
+$this->Html->script('/yourapp/Froala/js/froala_editor.min.js', array('toolbarInline' => false));
 ```
 
 If you need to load the plugins, then use:
@@ -37,22 +37,51 @@ If you need to load the plugins, then use:
 $this->Html->script(
   array(
     '/Froala/js/froala_editor.min.js',
-    '/Froala/js/plugins/block_styles.min.js',
+    '/Froala/js/plugins/align.min.js',
+    '/Froala/js/plugins/char_counter.min.js',
+    '/Froala/js/plugins/code_beautifier.min.js',
+    '/Froala/js/plugins/code_view.min.js',
     '/Froala/js/plugins/colors.min.js',
-    '/Froala/js/plugins/file_upload.min.js',
+    '/Froala/js/plugins/emoticons.min.js',
+    '/Froala/js/plugins/entities.min.js',
+    '/Froala/js/plugins/file.min.js',
     '/Froala/js/plugins/font_family.min.js',
     '/Froala/js/plugins/font_size.min.js',
-    '/Froala/js/plugins/media_manager.min.js',
-    '/Froala/js/plugins/lists.min.js',
-    '/Froala/js/plugins/tables.min.js',
-    '/Froala/js/plugins/char_counter.min.js',
     '/Froala/js/plugins/fullscreen.min.js',
-    '/Froala/js/plugins/inline_styles.min.js',
-    '/Froala/js/plugins/urls.min.js'
-    '/Froala/js/plugins/video.min.js',
-    '/Froala/js/plugins/entities.min.js'),
+    '/Froala/js/plugins/image_manager.min.js',
+    '/Froala/js/plugins/image.min.js',
+    '/Froala/js/plugins/inline_style.min.js',
+    '/Froala/js/plugins/line_breaker.min.js',
+    '/Froala/js/plugins/link.min.js',
+    '/Froala/js/plugins/lists.min.js',
+    '/Froala/js/plugins/paragraph_format.min.js',
+    '/Froala/js/plugins/paragraph_style.min.js',
+    '/Froala/js/plugins/quote.min.js',
+    '/Froala/js/plugins/save.min.js',
+    '/Froala/js/plugins/table.min.js',
+    '/Froala/js/plugins/url.min.js',
+    '/Froala/js/plugins/video.min.js'),
 
-  array('inline' => false)
+  array('toolbarInline' => false)
+);
+
+
+$this->Html->css(
+  array(
+    '/Froala/css/froala_editor.min.css',
+    '/Froala/css/froala_style.min.css',
+    '/Froala/css/plugins/char_counter.min.css',
+    '/Froala/css/plugins/code_view.min.css',
+    '/Froala/css/plugins/colors.min.css',
+    '/Froala/css/plugins/emoticons.min.css',
+    '/Froala/css/plugins/file.min.css',
+    '/Froala/css/plugins/fullscreen.min.css',
+    '/Froala/css/plugins/image_manager.min.css',
+    '/Froala/css/plugins/image.min.css',
+    '/Froala/css/plugins/line_breaker.min.css',
+    '/Froala/css/plugins/table.min.css',
+    '/Froala/css/plugins/video.min.css'
+  )
 );
 ```
 
@@ -71,7 +100,7 @@ $this->helpers = array('Froala.Froala');
 In the view simply use the editor() method and pass options as key/value pairs in an array.
 
 ```php
-$this->Froala->editor('.selector', array('inlineMode' => false));
+$this->Froala->editor('.selector', array('toolbarInline' => false));
 ```
 
 This will instruct Froala to convert all matched elements on the page to Froala editors. If you require some more precise control, or want to change this behavior, checkout the [Froala configuration options](http://editor.froala.com/docs/options) on the Froala website.
@@ -101,33 +130,36 @@ You can always check the tests to see how to use the helper.
 
 This plugin depends on jQuery (<http://jquery.com>) so you would need to ensure that it is loaded in your layout or the
 view in which you want to display your editor. An example of how to load jQuery in your layout is shown below:
-	<?php
-		...
+```php
+...
 
-		echo $this->Html->script(array('http://code.jquery.com/jquery-1.11.0.min.js'));
+echo $this->Html->script(array('http://code.jquery.com/jquery-1.11.0.min.js'));
 
-		...
+...
 
-		echo $this->fetch('script');
-	?>
+echo $this->fetch('script');
+
+...
+```
 
 Of course, you may also use a copy of the jQuery library from your app/webroot/js folder like this:
+```php
+...
 
-	<?php
-		...
+echo $this->Html->script(array('jquery.min'));
 
-		echo $this->Html->script(array('jquery.min'));
+...
 
-		...
+echo $this->fetch('script');
 
-		echo $this->fetch('script');
-	?>
+...
+```
 
 Also you should include the Font Awesome library so that the editor buttons work fine.
 
 ## License
 
-The `wysiwyg-cake` project is under MIT license.
+The `wysiwyg-cake` project is under MIT license. However, in order to use Froala WYSIWYG HTML Editor plugin you should purchase a license for it.
 
 Froala Editor has [3 different licenses](http://editor.froala.com/download/) for commercial use.
 For details please see [License Agreement](http://editor.froala.com/license).
