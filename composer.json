@@ -39,6 +39,7 @@
     "source": "https://www.froala.com/wysiwyg-editor"
   },
   "extra": {
-    "installer-name": "Froala Editor"
+    "installer-name": "Froala Editor",
+    "installer-name": "FroalaEditor"
   }
 }
