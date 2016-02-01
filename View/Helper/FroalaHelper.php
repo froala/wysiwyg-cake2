@@ -108,6 +108,7 @@ class FroalaHelper extends AppHelper {
       '/Froala/js/plugins/lists.min.js',
       '/Froala/js/plugins/paragraph_format.min.js',
       '/Froala/js/plugins/paragraph_style.min.js',
+      '/Froala/js/plugins/quick_insert.min.js',
       '/Froala/js/plugins/quote.min.js',
       '/Froala/js/plugins/save.min.js',
       '/Froala/js/plugins/table.min.js',
@@ -125,6 +126,7 @@ class FroalaHelper extends AppHelper {
         '/Froala/css/plugins/image_manager.min.css',
         '/Froala/css/plugins/image.min.css',
         '/Froala/css/plugins/line_breaker.min.css',
+        '/Froala/css/plugins/quick_insert.min.css',
         '/Froala/css/plugins/table.min.css',
         '/Froala/css/plugins/video.min.css'
       )
