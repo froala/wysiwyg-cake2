@@ -40,7 +40,7 @@ If you need to load the plugins, then use:
 
 ```php
 $this->Html->script(
-	array(
+  array(
     '/Froala/js/froala_editor.min.js',
     '/Froala/js/plugins/align.min.js',
     '/Froala/js/plugins/char_counter.min.js',
@@ -135,20 +135,16 @@ You can always check the tests to see how to use the helper.
 * CakePHP version: CakePHP 2.1+
 * jQuery javascript library <http://jquery.com/>
 
-## Special Dependency Note
+## Dependency Note
 
 This plugin depends on jQuery (<http://jquery.com>) so you would need to ensure that it is loaded in your layout or the
 view in which you want to display your editor. An example of how to load jQuery in your layout is shown below:
 
 ```php
 ...
-
 echo $this->Html->script(array('http://code.jquery.com/jquery-1.11.0.min.js'));
-
 ...
-
 echo $this->fetch('script');
-
 ...
 ```
 
@@ -156,13 +152,9 @@ Of course, you may also use a copy of the jQuery library from your app/webroot/j
 
 ```php
 ...
-
 echo $this->Html->script(array('jquery.min'));
-
 ...
-
 echo $this->fetch('script');
-
 ...
 ```
 
