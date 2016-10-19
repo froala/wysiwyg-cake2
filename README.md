@@ -1,9 +1,11 @@
 # Froala WYSIWYG Editor Plugin for CakePHP [![Build Status](https://secure.travis-ci.org/froala/wysiwyg-cake.png)](http://travis-ci.org/froala/wysiwyg-cake)
 
-For cake 2.3+
+>CakePHP Plugin for Froala Javascript WYSIWYG Text Editor. For cake 2.3+
 
+## About
 The purpose of placing [Froala WYSIWYG Editor](http://editor.froala.com) in a plugin is to keep it separate from a themed view, the regular webroot or the app in general, which makes it easier to update and overall follows the idea of keeping the code clean and modular.
 
+## Installation
 To use Froala WYSIWYG Editor you need to clone git repository:
 
 	git clone git://github.com/froala/wysiwyg-cake.git Plugin/Froala
@@ -14,6 +16,8 @@ Or if your CakePHP application is setup as a git repository, you can add it as a
 
 Alternatively, you can download an archive from the [master branch on Github](https://github.com/froala/wysiwyg-cake/archive/master.zip) and extract the contents to `Plugin/Froala`.
 
+
+## Usage
 The Froala helper is basically just a convenience helper that allows you to use php and CakePHP conventions to generate the configuration for Froala and as an extra it allows you to load configs.
 
 There two ways you can use this plugin, simply use the helper or load the editor "by hand" using
@@ -33,6 +37,7 @@ $this->Html->script('/yourapp/Froala/js/froala_editor.min.js', array('toolbarInl
 ```
 
 If you need to load the plugins, then use:
+
 ```php
 $this->Html->script(
   array(
@@ -89,7 +94,7 @@ $this->Html->css(
 );
 ```
 
-## How to use the helper ##
+## How to use the helper
 
 Since CakePHP 2.0 it is necessary to activate the plugin in your application. To do so,
 edit `app/Config/bootstrap.php` and add the line `CakePlugin::load('Froala');` at the
@@ -110,7 +115,7 @@ $this->Froala->editor('.selector', array('toolbarInline' => false));
 This will instruct Froala to convert all matched elements on the page to Froala editors. If you require some more precise control, or want to change this behavior, checkout the [Froala configuration options](http://editor.froala.com/docs/options) on the Froala website.
 
 
-## Application wide default options
+## Default options
 
 If you want a quick way to configure default values for all the Froala Editors of an application, you could use the 'Froala.editorOptions' configuration.
 
@@ -124,38 +129,32 @@ It will make all editors to have a 300px height. You may want to override this v
 
 You can always check the tests to see how to use the helper.
 
-## Requirements ##
+## Requirements
 
 * PHP version: PHP 5.2+
 * CakePHP version: CakePHP 2.1+
 * jQuery javascript library <http://jquery.com/>
 
-## Special Dependency Note ##
+## Dependency Note
 
 This plugin depends on jQuery (<http://jquery.com>) so you would need to ensure that it is loaded in your layout or the
 view in which you want to display your editor. An example of how to load jQuery in your layout is shown below:
+
 ```php
 ...
-
 echo $this->Html->script(array('http://code.jquery.com/jquery-1.11.0.min.js'));
-
 ...
-
 echo $this->fetch('script');
-
 ...
 ```
 
 Of course, you may also use a copy of the jQuery library from your app/webroot/js folder like this:
+
 ```php
 ...
-
 echo $this->Html->script(array('jquery.min'));
-
 ...
-
 echo $this->fetch('script');
-
 ...
 ```
 
