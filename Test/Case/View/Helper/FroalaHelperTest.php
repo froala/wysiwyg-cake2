@@ -188,7 +188,8 @@ class FroalaTest extends CakeTestCase {
           '/Froala/js/plugins/special_characters.min.js',
           '/Froala/js/plugins/table.min.js',
           '/Froala/js/plugins/url.min.js',
-          '/Froala/js/plugins/video.min.js'),
+          '/Froala/js/plugins/video.min.js',
+          '/Froala/js/plugins/word_paste.min.js'),
 				array('toolbarInline' => false));
 		$this->Froala->beforeRender('test.ctp');
 

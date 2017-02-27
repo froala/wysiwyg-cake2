@@ -117,7 +117,8 @@ class FroalaHelper extends AppHelper {
       '/Froala/js/plugins/save.min.js',
       '/Froala/js/plugins/table.min.js',
       '/Froala/js/plugins/url.min.js',
-      '/Froala/js/plugins/video.min.js'), array('toolbarInline' => false));
+      '/Froala/js/plugins/video.min.js',
+      '/Froala/js/plugins/word_paste.min.js'), array('toolbarInline' => false));
 		$this->Html->css(array(
         '/Froala/css/froala_editor.min.css',
         '/Froala/css/froala_style.min.css',
