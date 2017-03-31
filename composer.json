@@ -14,7 +14,8 @@
     "rich text editor",
     "rte",
     "javascript",
-    "jquery"
+    "jquery",
+		"wysiwy-editor"
   ],
   "homepage": "https://www.froala.com/wysiwyg-editor",
   "license": [
