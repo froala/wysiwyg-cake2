@@ -1,5 +1,5 @@
 /*!
- * froala_editor v2.5.1 (https://www.froala.com/wysiwyg-editor)
+ * froala_editor v2.6.0 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2017 Froala Labs
  */
@@ -483,6 +483,26 @@
 .red-theme.fr-modal .fr-modal-wrapper .fr-modal-body .fr-special-characters-modal .fr-special-character {
   border: 1px solid #cccccc;
 }
+.red-theme .examples-variante > a {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.red-theme .sc-cm-holder > .sc-cm {
+  border-top: 5px solid #671b1a !important;
+}
+.red-theme .sc-cm__item_dropdown:hover > a,
+.red-theme .sc-cm a:hover {
+  background-color: #c65a59 !important;
+}
+.red-theme .sc-cm__item_active > a,
+.red-theme .sc-cm__item_active > a:hover,
+.red-theme .sc-cm a:active,
+.red-theme .sc-cm a:focus {
+  background-color: #d48382 !important;
+}
+.red-theme .sc-cm-holder > .sc-cm:before {
+  background-color: #c65a59 !important;
+}
 .red-theme .fr-element table td.fr-selected-cell,
 .red-theme .fr-element table th.fr-selected-cell {
   border: 1px double #ffca28;
@@ -710,7 +730,7 @@
 .red-theme.fr-popup .fr-command.fr-btn span {
   font-size: 14px;
   line-height: 17px;
-  min-width: 38px;
+  min-width: 34px;
   height: 17px;
   padding: 0 2px;
 }
@@ -882,6 +902,12 @@
   bottom: 0;
   right: 0;
 }
+.red-theme.fr-modal.fr-middle .fr-modal-wrapper {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
 .red-theme.fr-modal .fr-modal-wrapper {
   border-radius: 2px;
   -moz-border-radius: 2px;
@@ -935,6 +961,25 @@
 }
 .red-theme.fr-modal .fr-modal-wrapper div.fr-modal-body:focus {
   outline: 0;
+}
+.red-theme.fr-modal .fr-modal-wrapper div.fr-modal-body button.fr-command {
+  color: #ffca28;
+  -webkit-transition: background 0.2s ease 0s;
+  -moz-transition: background 0.2s ease 0s;
+  -ms-transition: background 0.2s ease 0s;
+  -o-transition: background 0.2s ease 0s;
+}
+.red-theme.fr-modal .fr-modal-wrapper div.fr-modal-body button.fr-command:hover,
+.red-theme.fr-modal .fr-modal-wrapper div.fr-modal-body button.fr-command:focus {
+  background: #c65a59;
+  color: #ffca28;
+}
+.red-theme.fr-modal .fr-modal-wrapper div.fr-modal-body button.fr-command:active {
+  background: #d48382;
+  color: #ffca28;
+}
+.red-theme.fr-modal .fr-modal-wrapper div.fr-modal-body button::-moz-focus-inner {
+  border: 0;
 }
 .red-theme.red-theme.fr-desktop .fr-modal-wrapper .fr-modal-head i:hover {
   background: #c65a59;

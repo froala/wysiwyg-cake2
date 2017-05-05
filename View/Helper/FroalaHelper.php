@@ -102,6 +102,7 @@ class FroalaHelper extends AppHelper {
       '/Froala/js/plugins/font_size.min.js',
       '/Froala/js/plugins/fullscreen.min.js',
       '/Froala/js/plugins/help.min.js',
+      '/Froala/js/plugins/image_aviary.min.js',
       '/Froala/js/plugins/image_manager.min.js',
       '/Froala/js/plugins/image.min.js',
       '/Froala/js/plugins/inline_style.min.js',
@@ -115,6 +116,7 @@ class FroalaHelper extends AppHelper {
       '/Froala/js/plugins/quote.min.js',
       '/Froala/js/plugins/save.min.js',
       '/Froala/js/plugins/special_characters.min.js',
+      '/Froala/js/plugins/spell_checker.min.js',
       '/Froala/js/plugins/table.min.js',
       '/Froala/js/plugins/url.min.js',
       '/Froala/js/plugins/video.min.js',
@@ -135,6 +137,7 @@ class FroalaHelper extends AppHelper {
         '/Froala/css/plugins/line_breaker.min.css',
         '/Froala/css/plugins/quick_insert.min.css',
         '/Froala/css/plugins/special_characters.min.css',
+        '/Froala/css/plugins/spell_checker.min.css',
         '/Froala/css/plugins/table.min.css',
         '/Froala/css/plugins/video.min.css'
       )
