@@ -19,13 +19,18 @@ Or if your CakePHP application is setup as a git repository, you can add it as a
 	git submodule add git://github.com/froala/wysiwyg-cake.git Plugin/Froala
 
 Alternatively, you can download an archive from the [master branch on Github](https://github.com/froala/wysiwyg-cake/archive/master.zip) and extract the contents to `Plugin/Froala`.
-add
-"froala/wysiwyg-cake2": "^2.9"
+
+Add:
+
+         "froala/wysiwyg-cake2": "^2.9"
+
 to the require section of your composer.json file.
+
 or use [composer](https://getcomposer.org/download/)
+
 cmd-php ./composer.phar require froala/wysiwyg-cake2
-Then move the FroalaEditor folder from /Plugins to app/Plugin and rename it to Froala.
-or directly clone the folder from git repository to app/Plugin. 
+
+Then move the FroalaEditor folder from /Plugins to app/Plugin and rename it to Froala,or directly clone the folder from git repository to app/Plugin. 
 
 ## Usage
 The Froala helper is basically just a convenience helper that allows you to use php and CakePHP conventions to generate the configuration for Froala and as an extra it allows you to load configs.
