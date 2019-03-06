@@ -19,7 +19,13 @@ Or if your CakePHP application is setup as a git repository, you can add it as a
 	git submodule add git://github.com/froala/wysiwyg-cake.git Plugin/Froala
 
 Alternatively, you can download an archive from the [master branch on Github](https://github.com/froala/wysiwyg-cake/archive/master.zip) and extract the contents to `Plugin/Froala`.
-
+add
+"froala/wysiwyg-cake2": "^2.9"
+to the require section of your composer.json file.
+or use [composer](https://getcomposer.org/download/)
+cmd-php ./composer.phar require froala/wysiwyg-cake2
+Then move the FroalaEditor folder from /Plugins to app/Plugin and rename it to Froala.
+or directly clone the folder from git repository to app/Plugin. 
 
 ## Usage
 The Froala helper is basically just a convenience helper that allows you to use php and CakePHP conventions to generate the configuration for Froala and as an extra it allows you to load configs.
@@ -112,7 +118,15 @@ bottom. If you already have `CakePlugin::loadAll();` to auto-load all plugins th
 Wherever you want to use it, load it in the controller
 
 ```php
-$this->helpers = array('Froala.Froala');
+
+class AppController extends Controller
+{
+	...
+	
+	public $helpers = array('Froala.Froala');
+	
+	...
+}
 ```
 
 In the view simply use the editor() method and pass options as key/value pairs in an array.
@@ -147,7 +161,7 @@ You can always check the tests to see how to use the helper.
 ## Dependency Note
 
 This plugin depends on jQuery (<http://jquery.com>) so you would need to ensure that it is loaded in your layout or the
-view in which you want to display your editor. An example of how to load jQuery in your layout is shown below:
+view in which you want to display your editor or load it in FroalaHelper along with js and css files. An example of how to load jQuery in your layout is shown below:
 
 ```php
 ...

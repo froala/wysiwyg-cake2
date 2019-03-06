@@ -72,7 +72,7 @@ class FroalaHelper extends AppHelper {
 		// remove last comma from lines to avoid the editor breaking in Internet Explorer
 		$lines = rtrim($lines);
 		$lines = rtrim($lines, ',');
-		$this->Html->scriptBlock('$("' . $selector . '").froalaEditor({' . "\n" . $lines . "\n" . '});' . "\n", array('toolbarInline' => false));
+		echo $this->Html->scriptBlock('$("' . $selector . '").froalaEditor({' . "\n" . $lines . "\n" . '});' . "\n", array('toolbarInline' => false));
 	}
 
 /**
@@ -87,7 +87,7 @@ class FroalaHelper extends AppHelper {
 		if ($appOptions !== false && is_array($appOptions)) {
 			$this->_defaults = $appOptions;
 		}
-		$this->Html->script(array(
+		echo $this->Html->script(array(
       '/Froala/js/froala_editor.min.js',
       '/Froala/js/plugins/align.min.js',
       '/Froala/js/plugins/char_counter.min.js',
@@ -122,7 +122,7 @@ class FroalaHelper extends AppHelper {
       '/Froala/js/plugins/url.min.js',
       '/Froala/js/plugins/video.min.js',
       '/Froala/js/plugins/word_paste.min.js'), array('toolbarInline' => false));
-		$this->Html->css(array(
+		echo $this->Html->css(array(
         '/Froala/css/froala_editor.min.css',
         '/Froala/css/froala_style.min.css',
         '/Froala/css/plugins/char_counter.min.css',
