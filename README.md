@@ -70,8 +70,8 @@ $this->Html->script(
     '/Froala/js/plugins/font_size.min.js',
     '/Froala/js/plugins/fullscreen.min.js',
     '/Froala/js/plugins/help.min.js',
+	'/Froala/js/plugins/image.min.js',
     '/Froala/js/plugins/image_manager.min.js',
-    '/Froala/js/plugins/image.min.js',
     '/Froala/js/plugins/inline_style.min.js',
     '/Froala/js/plugins/line_breaker.min.js',
     '/Froala/js/plugins/link.min.js',
@@ -166,11 +166,11 @@ You can always check the tests to see how to use the helper.
 ## Dependency Note
 
 This plugin depends on jQuery (<http://jquery.com>) so you would need to ensure that it is loaded in your layout or the
-view in which you want to display your editor or load it in FroalaHelper along with js and css files. An example of how to load jQuery in your layout is shown below:
+view in which you want to display your editor or load it in FroalaHelper in app/Plugin/Froala/View/Helper along with js and css files. An example of how to load jQuery in your layout is shown below:
 
 ```php
 ...
-echo $this->Html->script(array('http://code.jquery.com/jquery-1.11.0.min.js'));
+echo $this->Html->script(array('https://code.jquery.com/jquery-3.3.1.min.js'));
 ...
 echo $this->fetch('script');
 ...
