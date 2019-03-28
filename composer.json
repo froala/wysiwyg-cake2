@@ -9,13 +9,11 @@
     "text",
     "editor",
     "wysiwyg",
-    "jquery-plugin",
     "rich editor",
     "rich text editor",
     "rte",
     "javascript",
-    "jquery",
-		"wysiwy-editor"
+    "wysiwy-editor"
   ],
   "homepage": "https://www.froala.com/wysiwyg-editor",
   "license": "proprietary",
@@ -26,10 +24,7 @@
     }
   ],
   "require": {
-    "composer/installers": "*",
-    "components/jquery": ">=1.11.0",
-    "fortawesome/font-awesome": ">=4.4.0"
-
+    "composer/installers": "*"
   },
   "support": {
     "issues": "https://github.com/froala/wysiwyg-cake/issues",

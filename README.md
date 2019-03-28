@@ -161,32 +161,6 @@ You can always check the tests to see how to use the helper.
 
 * PHP version: PHP 5.2+
 * CakePHP version: CakePHP 2.1+
-* jQuery javascript library <http://jquery.com/>
-
-## Dependency Note
-
-This plugin depends on jQuery (<http://jquery.com>) so you would need to ensure that it is loaded in your layout or the
-view in which you want to display your editor or load it in FroalaHelper in app/Plugin/Froala/View/Helper along with js and css files. An example of how to load jQuery in your layout is shown below:
-
-```php
-...
-echo $this->Html->script(array('https://code.jquery.com/jquery-3.3.1.min.js'));
-...
-echo $this->fetch('script');
-...
-```
-
-Of course, you may also use a copy of the jQuery library from your app/webroot/js folder like this:
-
-```php
-...
-echo $this->Html->script(array('jquery.min'));
-...
-echo $this->fetch('script');
-...
-```
-
-Also you should include the Font Awesome library so that the editor buttons work fine.
 
 ## License
 
