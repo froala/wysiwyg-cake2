@@ -56,23 +56,26 @@ class FroalaHelper extends AppHelper {
  * @return void
  */
 	public function editor($selector, $options = array()) {
-		if (is_string($options)) {
+    if (is_string($options)) {
 			if (isset($this->configs[$options])) {
-				$options = $this->configs[$options];
+        $options = $this->configs[$options];
 			} else {
 				throw new OutOfBoundsException(sprintf(__('Invalid Froala configuration preset %s'), $options));
 			}
+    }
+    if (is_object($options)){
+			$options = json_encode($options);
+		} else if (is_array($options)) {
+			$options = json_encode(array_merge($this->_defaults, $options));
+			
 		}
-		$options = array_merge($this->_defaults, $options);
-		$lines = '';
-
-		foreach ($options as $option => $value) {
-			$lines .= Inflector::underscore($option) . ' : "' . $value . '",' . "\n";
-		}
-		// remove last comma from lines to avoid the editor breaking in Internet Explorer
-		$lines = rtrim($lines);
-		$lines = rtrim($lines, ',');
-		echo $this->Html->scriptBlock('$("' . $selector . '").froalaEditor({' . "\n" . $lines . "\n" . '});' . "\n", array('toolbarInline' => false));
+		else {
+			$options = '{}';
+    }
+    
+    $script_str = 'new FroalaEditor("' . $selector . '",'.$options.');';  
+		echo $this->Html->scriptBlock($script_str);
+		
 	}
 
 /**
@@ -87,7 +90,8 @@ class FroalaHelper extends AppHelper {
 		if ($appOptions !== false && is_array($appOptions)) {
 			$this->_defaults = $appOptions;
 		}
-		echo $this->Html->script(array(
+    
+    echo $this->Html->script(array(
       '/Froala/js/froala_editor.min.js',
       '/Froala/js/plugins/align.min.js',
       '/Froala/js/plugins/char_counter.min.js',
@@ -104,7 +108,6 @@ class FroalaHelper extends AppHelper {
       '/Froala/js/plugins/fullscreen.min.js',
       '/Froala/js/plugins/help.min.js',
 	  '/Froala/js/plugins/image.min.js',
-      '/Froala/js/third_party/image_aviary.min.js',
       '/Froala/js/plugins/image_manager.min.js',
       '/Froala/js/plugins/inline_style.min.js',
       '/Froala/js/plugins/line_breaker.min.js',
@@ -122,7 +125,8 @@ class FroalaHelper extends AppHelper {
       '/Froala/js/plugins/url.min.js',
       '/Froala/js/plugins/video.min.js',
       '/Froala/js/plugins/word_paste.min.js'), array('toolbarInline' => false));
-		echo $this->Html->css(array(
+    
+      echo $this->Html->css(array(
         '/Froala/css/froala_editor.min.css',
         '/Froala/css/froala_style.min.css',
         '/Froala/css/plugins/char_counter.min.css',
