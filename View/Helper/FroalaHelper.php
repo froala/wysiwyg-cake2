@@ -124,7 +124,8 @@ class FroalaHelper extends AppHelper {
       '/Froala/js/plugins/table.min.js',
       '/Froala/js/plugins/url.min.js',
       '/Froala/js/plugins/video.min.js',
-      '/Froala/js/plugins/word_paste.min.js'), array('toolbarInline' => false));
+      '/Froala/js/plugins/word_paste.min.js',
+      '/Froala/js/third_party/font_awesome.min.js'), array('toolbarInline' => false));
     
       echo $this->Html->css(array(
         '/Froala/css/froala_editor.min.css',
@@ -145,7 +146,9 @@ class FroalaHelper extends AppHelper {
         '/Froala/css/plugins/special_characters.min.css',
         '/Froala/css/third_party/spell_checker.min.css',
         '/Froala/css/plugins/table.min.css',
-        '/Froala/css/plugins/video.min.css'
+        '/Froala/css/plugins/video.min.css',
+        '/Froala/css/third_party/font_awesome.min.css',
+        'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'
       )
     );
 	}
