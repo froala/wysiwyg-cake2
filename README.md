@@ -12,11 +12,11 @@ The purpose of placing [Froala WYSIWYG Editor](http://editor.froala.com) in a pl
 ## Installation
 To use Froala WYSIWYG Editor you need to clone git repository:
 
-	git clone git://github.com/froala/wysiwyg-cake.git Plugin/Froala
+	git clone git://github.com/froala/wysiwyg-cake2.git Plugin/Froala
 
 Or if your CakePHP application is setup as a git repository, you can add it as a submodule:
 
-	git submodule add git://github.com/froala/wysiwyg-cake.git Plugin/Froala
+	git submodule add git://github.com/froala/wysiwyg-cake2.git Plugin/Froala
 
 Alternatively, you can download an archive from the [master branch on Github](https://github.com/froala/wysiwyg-cake/archive/master.zip) and extract the contents to `Plugin/Froala`.
 
