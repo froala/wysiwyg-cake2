@@ -12,11 +12,11 @@ The purpose of placing [Froala WYSIWYG Editor](http://editor.froala.com) in a pl
 ## Installation
 To use Froala WYSIWYG Editor you need to clone git repository:
 
-	git clone git://github.com/froala/wysiwyg-cake.git Plugin/Froala
+	git clone git://github.com/froala/wysiwyg-cake2.git Plugin/Froala
 
 Or if your CakePHP application is setup as a git repository, you can add it as a submodule:
 
-	git submodule add git://github.com/froala/wysiwyg-cake.git Plugin/Froala
+	git submodule add git://github.com/froala/wysiwyg-cake2.git Plugin/Froala
 
 Alternatively, you can download an archive from the [master branch on Github](https://github.com/froala/wysiwyg-cake/archive/master.zip) and extract the contents to `Plugin/Froala`.
 
@@ -136,8 +136,11 @@ class AppController extends Controller
 
 In the view simply use the editor() method and pass options as key/value pairs in an array.
 
+
 ```php
-$this->Froala->editor('.selector', array('toolbarInline' => false));
+<div class="selector">
+  <?= $this->Froala->editor('.selector');?>
+</div>
 ```
 
 This will instruct Froala to convert all matched elements on the page to Froala editors. If you require some more precise control, or want to change this behavior, checkout the [Froala configuration options](http://editor.froala.com/docs/options) on the Froala website.
@@ -154,6 +157,11 @@ Configure::write('Froala.editorOptions', array('height' => '300px'))
 ```
 
 It will make all editors to have a 300px height. You may want to override this value for a single editor. To do so, just pass the option to the editor() method and it will override the default value.
+
+You can also pass options at editor iniliatization as given below 
+```
+$this->Froala->editor('.selector', array('option' => value));
+```
 
 You can always check the tests to see how to use the helper.
 
