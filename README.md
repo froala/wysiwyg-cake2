@@ -70,7 +70,7 @@ $this->Html->script(
     '/Froala/js/plugins/font_size.min.js',
     '/Froala/js/plugins/fullscreen.min.js',
     '/Froala/js/plugins/help.min.js',
-	  '/Froala/js/plugins/image.min.js',
+    '/Froala/js/plugins/image.min.js',
     '/Froala/js/plugins/image_manager.min.js',
     '/Froala/js/plugins/inline_style.min.js',
     '/Froala/js/plugins/line_breaker.min.js',
