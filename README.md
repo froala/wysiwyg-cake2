@@ -51,7 +51,7 @@ $this->Html->css('/yourapp/Froala/css/froala_editor.min.css');
 $this->Html->script('/yourapp/Froala/js/froala_editor.min.js', array('toolbarInline' => false));
 ```
 
-If you need to load the plugins, please include the respective `js` and `css` files in the file `Froala/View/Helper/FroalaHelper.php` as shown below:
+If you need to load the plugins, Include in the file `FroalaHelper.php`:
 
 ```php
 $this->Html->script(
@@ -70,7 +70,7 @@ $this->Html->script(
     '/Froala/js/plugins/font_size.min.js',
     '/Froala/js/plugins/fullscreen.min.js',
     '/Froala/js/plugins/help.min.js',
-	'/Froala/js/plugins/image.min.js',
+	  '/Froala/js/plugins/image.min.js',
     '/Froala/js/plugins/image_manager.min.js',
     '/Froala/js/plugins/inline_style.min.js',
     '/Froala/js/plugins/line_breaker.min.js',
@@ -118,7 +118,6 @@ $this->Html->css(
   )
 );
 ```
-You will have to include the `https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css` also as shown above.
 
 ## How to use the helper
 
