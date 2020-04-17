@@ -88,6 +88,8 @@ $this->Html->script(
     '/Froala/js/plugins/video.min.js'),
     '/Froala/js/third_party/spell_checker.min.js',
     '/Froala/js/third_party/embedly.min.js',
+		'/Froala/js/third_party/image_tui.min.js',
+		'/Froala/js/third_party/font_awesome.min.js',
 
   array('toolbarInline' => false)
 );
@@ -114,6 +116,8 @@ $this->Html->css(
     '/Froala/css/plugins/video.min.css',
     '/Froala/css/third_party/spell_checker.min.css',
     '/Froala/css/third_party/embedly.min.css',
+		'/Froala/css/third_party/image_tui.min.css',
+		'/Froala/css/third_party/font_awesome.min.css',
     'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'
   )
 );
