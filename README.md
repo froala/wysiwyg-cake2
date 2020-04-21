@@ -51,7 +51,7 @@ $this->Html->css('/yourapp/Froala/css/froala_editor.min.css');
 $this->Html->script('/yourapp/Froala/js/froala_editor.min.js', array('toolbarInline' => false));
 ```
 
-If you need to load the plugins, then use:
+If you need to load the plugins, Include in the file `FroalaHelper.php`:
 
 ```php
 $this->Html->script(
@@ -70,7 +70,7 @@ $this->Html->script(
     '/Froala/js/plugins/font_size.min.js',
     '/Froala/js/plugins/fullscreen.min.js',
     '/Froala/js/plugins/help.min.js',
-	'/Froala/js/plugins/image.min.js',
+    '/Froala/js/plugins/image.min.js',
     '/Froala/js/plugins/image_manager.min.js',
     '/Froala/js/plugins/inline_style.min.js',
     '/Froala/js/plugins/line_breaker.min.js',
@@ -86,6 +86,10 @@ $this->Html->script(
     '/Froala/js/plugins/table.min.js',
     '/Froala/js/plugins/url.min.js',
     '/Froala/js/plugins/video.min.js'),
+    '/Froala/js/third_party/spell_checker.min.js',
+    '/Froala/js/third_party/embedly.min.js',
+		'/Froala/js/third_party/image_tui.min.js',
+		'/Froala/js/third_party/font_awesome.min.js',
 
   array('toolbarInline' => false)
 );
@@ -109,7 +113,12 @@ $this->Html->css(
     '/Froala/css/plugins/quick_insert.min.css',
     '/Froala/css/plugins/special_characters.min.css',
     '/Froala/css/plugins/table.min.css',
-    '/Froala/css/plugins/video.min.css'
+    '/Froala/css/plugins/video.min.css',
+    '/Froala/css/third_party/spell_checker.min.css',
+    '/Froala/css/third_party/embedly.min.css',
+		'/Froala/css/third_party/image_tui.min.css',
+		'/Froala/css/third_party/font_awesome.min.css',
+    'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'
   )
 );
 ```
