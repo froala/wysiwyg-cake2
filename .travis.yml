@@ -3,9 +3,10 @@ git:
   quiet: false
 language: generic
 dist: bionic 
-sudo: required  
+sudo: required
+  
 branches:
-only:
+  only:
     - /dev*/
     - /AO-dev*/
     - /QA*/
