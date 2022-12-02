@@ -2,9 +2,8 @@ git:
   depth: false
   quiet: false
 language: generic
-dist: bionic 
-sudo: required
-  
+dist: bionic
+sudo: required 
 branches:
   only:
     - /dev*/
@@ -23,7 +22,7 @@ before_install:
 jobs:
   include:
     if: commit_message =~ /(deploy-yes)/
-    script: 
+    script:
       - chmod u+x build-push-to-nexus.sh && bash build-push-to-nexus.sh
 notifications:
   email:
