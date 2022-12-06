@@ -5,7 +5,7 @@ language: generic
 dist: bionic 
 sudo: required  
 branches:
-only:
+  only:
     - /dev*/
     - /AO-dev*/
     - /QA*/
