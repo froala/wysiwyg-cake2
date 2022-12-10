@@ -36,6 +36,5 @@ ARCHIVE_NAME="${BUILD_REPO_NAME}-${TRAVIS_BRANCH}-${PACKAGE_VERSION}.zip"
 zip -r "/tmp/${ARCHIVE_NAME}" .
 mv "/tmp/${ARCHIVE_NAME}" ./
 echo "archive name : ${ARCHIVE_NAME}"
-ls -latrh
 curl -k --user "${NEXUS_USER}:${NEXUS_USER_PWD}"  --upload-file ${ARCHIVE_NAME}  https://nexus.tools.froala-infra.com/repository/Froala-raw-repo/${BUILD_REPO_NAME}/${ARCHIVE_NAME}
 exit $?
