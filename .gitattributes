@@ -1,0 +1,3 @@
+.travis.yml                     export-ignore
+build-push-to-nexus.sh          export-ignore
+version.json                    export-ignore
