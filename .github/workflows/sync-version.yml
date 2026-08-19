@@ -86,7 +86,7 @@ jobs:
           GH_TOKEN: ${{ secrets.PAT }}
           RELEASE_NOTES: ${{ github.event.client_payload.release_notes }}
         run: |
-          PR_BODY=$(printf "release: yes\n\n## Release Notes (from primary repo)\n\n%s\n" "$RELEASE_NOTES")
+          PR_BODY=$(printf "%s\n" "$RELEASE_NOTES")
 
           gh pr create \
             --base master \
